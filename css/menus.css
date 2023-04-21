@@ -3,8 +3,35 @@
     width: 100%;
     height: 39px;
     background: #253666;
+    border-bottom: 3px solid #0042ff;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    z-index: 999;
+}
+
+.menu-urls{
+    text-align: center;
+}
+
+.menu-urls a {
+    text-decoration: none;
+    color: #c1c1c1;
+    font-family: monospace;
+    font-size: 1.7em;
+    margin: 0.5em;
+    position: relative;
+    top: 0.3em;
+    padding-bottom: 0.4em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.menu-urls a:hover{
+    background-color: #0042ff;
+    color: rgb(255, 255, 255);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
 }
 
 .sociais {
@@ -26,8 +53,8 @@
 }
 
 .busca {
-    text-align: center;
     position: relative;
+    text-align: right;
 }
 
 .busca input {
@@ -37,14 +64,92 @@
     color: #ffffff;
     position: relative;
     top: 20%;
-    text-align: center;
+    width: 11em;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-input::placeholder{
+input::placeholder {
     color: #c9cacc;
     text-align: center;
+}
+
+.botao-menu {
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    .menu-principal {
+        position: fixed;
+        width: 100%;
+        height: 2.3em;
+        background: #253666;
+        display: grid;
+        grid-template-columns: auto 2em;
+    }
+
+    .menu-urls {
+        display: none;
+    }
+
+    .botao-menu {
+        background-color: #17223f73;
+        text-align: center;
+        border-left: 1px solid #ffffff54;
+        display: block;
+    }
+
+    .botao-menu button {
+        color: #c9cacc;
+        font-family: sans-serif;
+        margin: 0 auto;
+        position: relative;
+        cursor: pointer;
+        background: transparent;
+        border-style: none;
+        font-size: 1em;
+        width: 100%;
+        height: 100%;
+    }
+
+    .botao-menu button:focus {
+        background-color: #d6d0d04f;
+    }
+
+    .sociais {
+        display: none;
+        position: relative;
+        text-align: right;
+    }
+
+    .sociais ul li img {
+        width: auto;
+        height: 25px;
+        padding: 0px 4px;
+    }
+
+    .sociais ul {
+        position: relative;
+        right: 1.7em;
+        margin: 0 auto;
+        top: 0.5em;
+    }
+
+    .busca {
+        display: none;
+        text-align: center;
+        position: relative;
+    }
+
+    .busca input {
+        border-radius: 12px;
+        background-color: #ffffff24;
+        border: 1px solid #c9cacc;
+        color: #ffffff;
+        position: relative;
+        top: 20%;
+        text-align: center;
+    }
 }

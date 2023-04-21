@@ -1,0 +1,58 @@
+.slider {
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    top: 2.6em;
+    overflow: hidden;
+}
+
+.slick-prev {
+    float: left;
+    width: 5em;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    background-color: #ffffff1a;
+    border: 0px;
+    color: transparent;
+}
+
+button.slick-prev:hover {
+    background-color: #ffffff6b;
+}
+
+
+button.slick-next {
+    width: 5em;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    left: 93%;
+    cursor: pointer;
+    background-color: #ffffff1a;
+    border: 0px;
+    color: transparent;
+}
+
+button.slick-next:hover {
+    background-color: #ffffff6b;
+}
+
+
+.slick-dots li button {
+    background-color: transparent;
+    color: transparent;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}
+
+
+@media(max-width: 768px) {
+    .slider{
+        display: none;
+    }
+}

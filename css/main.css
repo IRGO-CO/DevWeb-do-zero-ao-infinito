@@ -3,7 +3,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 0px;
-
+    background-color: #191b26;
 }
 
 header {
@@ -23,9 +23,10 @@ ul li {
 
 .logo {
     font-family: monospace;
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: left;
     position: relative;
+    bottom: 0.1em;
 }
 
 .logo a {
@@ -35,8 +36,8 @@ ul li {
     color: rgb(193 193 193);
     font-weight: bold;
     width: 100%;
-    left: 1em;
     position: relative;
+    left: 0.8em;
 }
 
 @media (max-width: 1024px) {
@@ -46,15 +47,17 @@ ul li {
         float: left;
         position: relative;
         text-align: center;
+        height: 89%;
     }
     
     .logo a {
         text-decoration: none;
         float: left;
-        height: 100%;
+        height: 94%;
         color: rgb(193 193 193);
         width: 100%;
         position: relative;
-        top: 0.1em;
+        left: 0em;
+        top: -0.1em;
     }
 }

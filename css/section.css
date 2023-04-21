@@ -4,11 +4,12 @@
     position: relative;
     top: 2.6em;
     overflow: hidden;
+    height: 15em;
 }
 
 .slick-prev {
     float: left;
-    width: 5em;
+    width: 3em;
     height: 100%;
     position: absolute;
     z-index: 9;
@@ -24,11 +25,11 @@ button.slick-prev:hover {
 
 
 button.slick-next {
-    width: 5em;
+    width: 4em;
     height: 100%;
     position: absolute;
     z-index: 9;
-    left: 93%;
+    left: 95%;
     cursor: pointer;
     background-color: #ffffff1a;
     border: 0px;

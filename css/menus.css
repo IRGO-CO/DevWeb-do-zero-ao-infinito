@@ -1,0 +1,50 @@
+.menu-principal {
+    position: fixed;
+    width: 100%;
+    height: 39px;
+    background: #253666;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.sociais {
+    position: relative;
+    text-align: right;
+}
+
+.sociais ul li img {
+    width: auto;
+    height: 25px;
+    padding: 0px 4px;
+}
+
+.sociais ul {
+    position: relative;
+    right: 1.7em;
+    margin: 0 auto;
+    top: 0.5em;
+}
+
+.busca {
+    text-align: center;
+    position: relative;
+}
+
+.busca input {
+    border-radius: 12px;
+    background-color: #ffffff24;
+    border: 1px solid #c9cacc;
+    color: #ffffff;
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: #c9cacc;
+    text-align: center;
+}

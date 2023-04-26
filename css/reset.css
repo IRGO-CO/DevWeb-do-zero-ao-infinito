@@ -9,8 +9,8 @@
  */
 
  html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+     /* 1 */
+     /* 2 */
   }
   
   /* Sections
@@ -29,7 +29,6 @@
    */
   
   main {
-    display: block;
   }
   
   /**
@@ -148,6 +147,8 @@
   
   img {
     border-style: none;
+    position: relative;
+    top: 1em;
   }
   
   /* Forms

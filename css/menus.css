@@ -1,32 +1,47 @@
 .menu-principal {
     position: fixed;
     width: 100%;
-    height: 39px;
-    background: #001e4a;
-    border-bottom: 3px solid #37497a;
+    height: 2.4em;
+    background: radial-gradient(#214c8b, #1d375c 100%);
+    border-bottom: 3px solid #34477a;
     display: grid;
-    grid-template-columns: auto auto 25% auto;
+    grid-template-columns: auto auto 25% 13%;
     z-index: 999;
 }
 
-.menu-urls{
+.menu-urls {
     text-align: right;
+    margin-top: -1em;
 }
 
-.menu-urls a {
+.menu-urls ul li a {
     text-decoration: none;
-    color: #c1c1c1;
+    color: #ffffff;
     font-family: monospace;
     font-size: 1.4em;
     margin: 0.1em;
     position: relative;
-    top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 0.2em;
     padding-right: 0.2em;
 }
 
-.menu-urls a:hover{
+.menu-urls ul {
+    top: 1.56em;
+    position: relative;
+    margin: 0 auto;
+    padding: 0em;
+    width: 94%;
+    right: 0;
+}
+
+.menu-urls ul li {
+    display: inline-block;
+    margin: 0em 0.3em;
+}
+
+
+.menu-urls a:hover {
     background-color: #37497a;
     color: rgb(255, 255, 255);
     border-top-right-radius: 5px;
@@ -56,9 +71,8 @@
     position: relative;
     text-align: left;
     width: 6em;
-    height: 2.1em;
+    height: 2em;
     top: 0.5em;
-    left: 0.5em;
 }
 
 .busca input {
@@ -94,62 +108,139 @@
 }
 
 
-
 .busca input::placeholder {
-    color: #c9cacc;
+    color: #ffffff;
     text-align: center;
 }
-.busca input:focus::placeholder{
+
+.busca input:focus::placeholder {
     color: transparent;
 }
 
 .botao-menu {
     display: none;
+    z-index: 999;
 }
 
+.botao-menu img {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    display: block;
+    top: 0.4em;
+    left: 0.3em;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
 
 
 @media(max-width: 972px) {
     .menu-principal {
-        position: fixed;
-        width: 100%;
-        height: 2.5em;
-        background: #001e4a;
-        display: grid;
-        grid-template-columns: auto 2.1em;
+        grid-template-rows: auto;
+        grid-template-columns: auto 2.5em;
     }
 
     .menu-urls {
-        display: none;
+        display: block;
+        background-color: #111a30d4;
+        width: 100%;
+        height: 50em;
+        margin: 0 auto;
+        top: 2.5em;
+        position: absolute;
+        padding-bottom: 0.6em;
+        padding-right: 2em;
+        left: 100%;
+        padding-top: 2.5em;
+    }
+
+    .menu-urls ul li {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        background-color: #204479;
+        border-radius: 0;
+    }
+
+    .menu-urls ul li a {
+        display: block;
+        padding: 0.3em;
+        font-size: 1.2em;
+        width: 100%;
+        right: 0.5em;
+        font-family: math;
+        color: #d3896a;
+        font-weight: bold;
     }
 
     .botao-menu {
-        background-color: #17223f73;
-        text-align: center;
-        border-left: 1px solid #ffffff54;
         display: block;
-        height: 100%;
     }
 
-    .botao-menu button {
-        color: #c9cacc00;
-        background-image: url(../img/Background-menu.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: 0em;
-        margin: 0 auto;
-        position: relative;
-        cursor: pointer;
-        border-style: none;
-        font-size: 1em;
+
+    input[type="checkbox"]:checked~label img {
+        padding: 0.1em;
+    }
+
+    input[type="checkbox"]:checked~nav {
+        left: 0em;
+    }
+
+    input[type="checkbox"]:checked~.busca {
+        display: block;
+
+    }
+
+    .busca {
+        display: none;
+        position: absolute;
+        text-align: center;
         width: 100%;
-        height: 100%;
-        background-color: transparent;
+        height: 3.1em;
+        left: 0;
+        border-bottom: 2px solid #ffffff60;
+        top: 3em;
     }
 
-    .botao-menu button:focus {
-        background-color: #d6d0d04f;
+    .busca input {
+        border-radius: 0px;
+        background-color: transparent;
+        border: 1px solid #c9cacc;
+        color: #ffffff;
+        position: relative;
+        top: 0.6em;
+        width: 90%;
+        font-family: monospace;
+        font-size: 1.4em;
+        cursor: pointer;
+        outline: none;
+        text-align: center;
+        cursor: text;
     }
+
+    .busca:hover {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        top: 1em;
+        margin: 0;
+        margin-top: 2em;
+    }
+
+    .busca input:focus {
+        outline: none;
+        width: 90%;
+        text-align: center;
+        cursor: text;
+        background-color: transparent;
+        border-radius: 5px;
+        outline: none;
+    }
+
 
     .sociais {
         display: none;
@@ -170,19 +261,4 @@
         top: 0.5em;
     }
 
-    .busca {
-        display: none;
-        text-align: center;
-        position: relative;
-    }
-
-    .busca input {
-        border-radius: 12px;
-        background-color: #ffffff24;
-        border: 1px solid #c9cacc;
-        color: #ffffff;
-        position: relative;
-        top: 20%;
-        text-align: center;
-    }
 }

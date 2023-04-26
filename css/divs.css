@@ -1,0 +1,55 @@
+.texto-principal {
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 2em;
+}
+
+.conteudo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.metodos {
+    display: grid;
+    grid-template-rows: auto 37% auto;
+    width: 100%;
+    align-items: center;
+}
+
+.metodos p {
+    text-align: justify;
+    font-size: 112%;
+    line-height: 115%;
+    width: 80%;
+    margin: 0% 10%;
+    height: auto;
+}
+
+.metodos img {
+    margin: 1% 25%;
+    width: 49%;
+    height: auto;
+}
+
+.metodos button {
+    width: 72%;
+    margin: 0 15%;
+    border: none;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: monospace;
+    cursor: pointer;
+    text-shadow: 5px 4px 4px black;
+    background: radial-gradient(#4069a5, #315b97cc 100%);
+    padding: 0.3em;
+}
+
+.metd-centro {
+}
+
+.metodos button:hover {
+    box-shadow: none;
+    text-shadow: none;
+}

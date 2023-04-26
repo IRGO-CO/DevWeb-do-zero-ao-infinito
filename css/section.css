@@ -1,0 +1,44 @@
+.principal {
+    display: grid;
+    grid-template-rows: 44% 56%;
+    width: 80%;
+    margin: 0% 10%;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.img-sobre {
+    padding: 4em 0;
+}
+
+.img-sobre img {
+    width: 25em;
+}
+
+.txt-sobre{text-align: center;width: 89%;margin-left: 10%;}
+
+.txt-sobre h1 {
+    font-size: 4em;
+    font-family: cursive;
+    width: 100%;
+    background-image: url(../img/bg-sobre.png);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position-x: center;
+    height: 1.9em;
+    padding-top: 2%;
+    margin: 0;
+    margin-top: 10%;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+.txt-sobre p {
+    font-family: monospace;
+    font-size: 1.2em;
+}

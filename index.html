@@ -5,37 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codaut</title>
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <title>codAbili</title>
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link rel="stylesheet" type="text/css" href="./css/menus.css">
     <link rel="stylesheet" type="text/css" href="./css/divs.css">
     <link rel="stylesheet" type="text/css" href="./css/section.css">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/slider.css">
 </head>
+
 <body>
     <header>
         <section class="menu-principal">
             <div class="logo">
                 <a href="./index.html">
-                    &lt;codaut&gt;
+                    &lt;<strong class="cor-destaque">cod</strong><strong>Abili</strong>&gt;
                 </a>
             </div>
-            <div class="menu-urls">
-                <a href="">Sobre</a>
-                <a href="">Documentos</a>
-                <a href="">Tutoriais</a>
-                <a href="">Contato</a>
-            </div>
+            <input class="botao-menu" type="checkbox" id="chec">
+            <label class="botao-menu" for="chec">
+                <img src="./img/botao-menu.png" />
+            </label>
+            </input>
+            <nav class="menu-urls">
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">E-books</a></li>
+                    <li><a href="">Tutoriais</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
             <div class="busca">
-                <input  placeholder="Pesquisar" type="text" />
-            </div>
-            
-            <div class="botao-menu">
-                <button></button>
+                <input placeholder="Pesquisar" type="text" />
             </div>
         </section>
+
     </header>
+    <main>
+        <section class="slide-principal">
+            <div><img src="./img/banner.png"></div>
+            <div><img src="./img/banner1.png"></div>
+            <div><img src="./img/banner2.png"></div>
+        </section>
+        <section class="principal" id="Inicio">
+            <div class="texto-principal">
+                <h1>
+                    Aprender programação web <strong class='cor-destaque'>é extremamente útil </strong>em um mundo cada
+                    vez mais digital.
+                </h1>
+                <p>
+                    Com a capacidade de criar sites e aplicativos interativos, <strong class="cor-destaque">os
+                        profissionais de programação web estão
+                        em alta demanda</strong> em muitas indústrias, desde a criação de sites de comércio eletrônico
+                    até
+                    aplicativos móveis. Além disso, a programação web permite que indivíduos e empresas criem sua
+                    própria presença online, facilitando a comunicação e a conexão com um público mais amplo. Com o
+                    conhecimento de programação web, <strong class="cor-destaque">você pode desenvolver habilidades
+                        valiosas</strong> para o mercado de
+                    trabalho e também criar projetos pessoais para expandir suas habilidades criativas e tecnológicas.
+                </p>
+            </div>
+            <div class="conteudo">
+
+                <div class="metodos">
+                    <img src="./img/content-2.png" />
+                    <p>
+                        Nossos ebooks explicativos são elaborados com ilustrações cuidadosamente selecionadas e
+                        exercícios resolvidos.
+                    </p>
+                    <button type="submit">
+                        Conheça Já
+                    </button>
+                </div>
+
+                <div class="metodos">
+                    <img src="./img/content-1.png" />
+                    <p>
+                        Nossos vídeos explicativos são especialmente elaborados com uma abordagem altamente didática,
+                        combinando animações e recursos visuais.
+                    </p>
+                    <button type="submit">
+                        Conheça Já
+                    </button>
+                </div>
+
+
+                <div class="metodos">
+                    <img src="./img/content-3.png" />
+                    <p>
+                        Nossos projetos são especialmente desenvolvidos para permitir que você coloque em prática tudo o
+                        que foi aprendido.
+                    </p>
+                    <button type="submit">
+                        Conheça Já
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="sobre" id="Sobre">
+            <div class="img-sobre">
+                <img src="./img/imagem-sobre.png" />
+            </div>
+            <div class="txt-sobre">
+                <h1>Sobre</h1>
+                <p>
+                    Bem-vindo ao projeto &lt;<strong class="cor-destaque">cod</strong>Abili&gt, um programa educacional destinado a ensinar programação por meio da
+                        aprendisagem visual para pessoas neuroatipicas.
+                    </p>
+                    <p>
+                        O objetivo deste projeto é fornecer uma forma de <strong class="cor-destaque">aprendisagem efetiva e inclusiva</strong> para aqueles
+                        que tem dificuldades com o método tradicional de ensino de programação. Sabemos que muitas
+                        pessoas neuroatipicas possuem uma maneira única de processar informações, e nosso programa foi
+                        desenvolvido para se adequar a essas necessidades.
+                </p>
+
+            </div>
+        </section>
+    </main>
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/jquery-migrate.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>

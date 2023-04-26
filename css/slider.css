@@ -1,0 +1,21 @@
+.slide-principal{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #34477a42;
+    display: grid;
+}
+
+.slide-principal div {
+    height: 100%;
+    width: 100%;
+}
+
+.slide-principal div img {
+}
+
+@media (max-width: 768px) {
+    .slide-principal{
+        display: grid;
+    }
+}

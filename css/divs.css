@@ -22,14 +22,15 @@
     font-size: 112%;
     line-height: 115%;
     width: 80%;
-    margin: 0% 10%;
     height: auto;
+    margin: 10%;
 }
 
 .metodos img {
-    margin: 1% 25%;
     width: 49%;
     height: auto;
+    margin: 24%;
+    margin-bottom: 10%;
 }
 
 .metodos button {
@@ -44,9 +45,6 @@
     text-shadow: 5px 4px 4px black;
     background: radial-gradient(#4069a5, #315b97cc 100%);
     padding: 0.3em;
-}
-
-.metd-centro {
 }
 
 .metodos button:hover {

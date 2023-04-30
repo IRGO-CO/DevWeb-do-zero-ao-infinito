@@ -1,6 +1,6 @@
 .principal {
     display: grid;
-    grid-template-rows: 44% 56%;
+    grid-template-rows: auto auto;
     width: 80%;
     margin: 0% 10%;
 }
@@ -20,7 +20,11 @@
     width: 25em;
 }
 
-.txt-sobre{text-align: center;width: 89%;margin-left: 10%;}
+.txt-sobre {
+    text-align: center;
+    width: 89%;
+    margin-left: 10%;
+}
 
 .txt-sobre h1 {
     font-size: 4em;
@@ -41,4 +45,108 @@
 .txt-sobre p {
     font-family: monospace;
     font-size: 1.2em;
+}
+
+.ebooks {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 150, 248, 0.281);
+}
+
+.header-ebooks {
+    height: 3.7em;
+    position: relative;
+    text-align: center;
+    background-image: url(../img/header-ebooks.png);
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: 20%;
+}
+
+
+.header-ebooks h1 {
+    font-size: 300%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px black;
+    margin-bottom: 0;
+    margin-top: 3%;
+}
+
+
+
+.menu-ebooks {
+    margin: 0 42%;
+    width: 1;
+    text-align: center;
+    border-bottom: 1px solid #0c79c7;
+}
+
+.menu-ebooks button {
+    background-color: transparent;
+    border: 0;
+    font-family: monospace;
+    cursor: pointer;
+
+}
+
+
+
+.menu-ebooks button:hover,
+.menu-ebooks button:hover a {
+    color: #0c79c7;
+}
+
+.categorias {
+    position: absolute;
+    width: 16%;
+    height: auto;
+    margin: 0% 0%;
+    border: 1px solid #0c79c7;
+    display: none;
+}
+
+.categorias button a {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-ebooks button:hover+.categorias {
+    display: block;
+}
+
+.categorias:hover {
+    display: block;
+}
+
+
+
+.container-ebooks {
+    width: 100%;
+    height: 31%;
+    overflow-y: hidden;
+    position: relative;
+    z-index: -1;
+    margin-top: 2%;
+    border-bottom: 2px solid #000000;
+}
+
+.container-ebooks2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    margin: 5%;
+}
+
+.container-ebooks2 div img {
+    width: 80%;
+    margin: 11%;
+}
+
+.container-ebooks2 div img:hover {
+    cursor: pointer;
 }

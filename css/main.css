@@ -1,6 +1,6 @@
 html, body, .container-ebooks {
     scroll-behavior: smooth;
-    scroll-padding-top: 5%;
+    scroll-padding-top: 2.5em;
   }
 
 body {
@@ -30,9 +30,9 @@ section {
 .logo {
     font-family: monospace;
     font-size: 26px;
-    text-align: center;
     position: relative;
     bottom: 0.1em;
+    text-align: center;
 }
 
 .logo a {
@@ -40,9 +40,18 @@ section {
     color: rgb(181 181 181 / 62%);
     font-weight: bold;
     position: relative;
-    left: 0.8em;
+    left: -0.2em;
     text-align: center;
     top: 0.27em;
+}
+
+.logo b {
+    color: #ffffff94;
+    text-align: right;
+    width: auto;
+    position: absolute;
+    top: 32.1%;
+    font-size: 15px;
 }
 
 strong {

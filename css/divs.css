@@ -52,34 +52,6 @@
     text-shadow: none;
 }
 
-.container-ebooks {
-    overflow: hidden;
-    position: relative;
-    display: grid;
-    grid-template-columns: 100% 100% 100%;
-    margin-top: 0%;
-}
-
-.container-ebooks2 {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    position: relative;
-    margin: 0;
-    padding-top: 5%;
-}
-
-.container-ebooks2 div img {
-    width: 80%;
-    margin: 13% 10%;
-    border-radius: 10px;
-}
-
-.container-ebooks2 div img:hover {
-    cursor: pointer;
-    margin: 12% 8%;
-    width: 82%;
-    border-radius: 20px;
-}
 
 .header-ebooks {
     height: 6em;
@@ -140,4 +112,35 @@
     font-family: cursive;
     font-size: 30px;
     margin-left: 5%;
+}
+
+
+.container-ebooks {
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+    margin-top: 0%;
+}
+
+.container-ebooks2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    margin: 0;
+    padding-top: 5%;
+}
+
+.container-ebooks2 div img {
+    width: 80%;
+    margin: 13% 10%;
+    border-radius: 10px;
+}
+
+.container-ebooks2 div img:hover {
+    cursor: pointer;
+    margin: 12% 8%;
+    width: 82%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px #000000;
 }

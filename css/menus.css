@@ -46,7 +46,6 @@
     color: rgb(255, 255, 255);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-
 }
 
 .sociais {
@@ -167,7 +166,7 @@ input[type="checkbox"] {
 
     .menu-urls {
         display: block;
-        background-color: #111a30d4;
+        background-color: #204479;
         width: 100%;
         margin: 0 auto;
         top: 2.5em;
@@ -175,25 +174,25 @@ input[type="checkbox"] {
         padding-bottom: 0.6em;
         padding-right: 2em;
         left: 100%;
-        padding-top: 2.5em;
+        border-bottom: 3px solid #86a3cd;
     }
 
     .menu-urls ul li {
-        display: block;
         margin: -6px auto;
-        width: auto;
-        text-align: left;
         border-radius: 0;
         margin-top: 0%;
-        margin-left: 15%;
+        margin-left: 1%;
+        width: 12%;
+        display: inline-block;
+        margin-top: 0.5%;
+        text-align: center;
     }
 
     .menu-urls ul li a {
         display: block;
         padding: 0;
         font-family: monospace;
-        font-size: 1.4em;
-        width: 100%;
+        width: auto;
         color: #ff7e00;
         font-weight: bold;
         margin: 0;
@@ -219,22 +218,20 @@ input[type="checkbox"] {
 
     .menu-urls ul {
         position: relative;
-        margin: 0px -100px;
+        margin: 0px;
         padding: 0em;
         width: 100%;
-        display: flex;
-        left: 5%;
-        margin-top: 1%;
+        display: inline-block;
+        text-align: left;
     }
     .busca {
         display: none;
         position: absolute;
         text-align: center;
-        width: 100%;
+        width: 38%;
         height: 3.1em;
-        left: 0;
-        border-bottom: 2px solid #ffffff60;
-        top: 2em;
+        left: 60%;
+        top: 64%;
     }
 
     .busca

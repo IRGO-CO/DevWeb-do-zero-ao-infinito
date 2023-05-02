@@ -1,0 +1,271 @@
+/* MAIN */
+@media (max-width: 1024px) {
+
+    .logo {
+        font-family: monospace;
+        font-size: 26px;
+        float: left;
+        position: relative;
+        text-align: center;
+        height: 89%;
+        top: 0.3em;
+        left: 0.6em;
+    }
+
+    .logo a {
+        text-decoration: none;
+        float: left;
+        height: 94%;
+        color: rgb(193 193 193);
+        width: 100%;
+        position: relative;
+        left: 0em;
+        top: -0.1em;
+    }
+}
+
+/* MENUS */
+@media(max-width: 972px) {
+    .menu-principal {
+        grid-template-rows: auto;
+        grid-template-columns: auto 2.5em;
+    }
+
+    .menu-urls {
+        display: block;
+        background-color: #204479;
+        width: 100%;
+        margin: 0 auto;
+        top: 2.5em;
+        position: absolute;
+        padding-bottom: 0.6em;
+        padding-right: 2em;
+        left: 100%;
+        border-bottom: 3px solid #86a3cd;
+    }
+
+    .menu-urls ul li {
+        margin: -6px auto;
+        border-radius: 0;
+        margin-top: 0%;
+        margin-left: 1%;
+        width: 12%;
+        display: inline-block;
+        margin-top: 0.5%;
+        text-align: center;
+    }
+
+    .menu-urls ul li a {
+        display: block;
+        padding: 0;
+        font-family: monospace;
+        width: auto;
+        color: #ffffff;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .botao-menu {
+        display: block;
+    }
+
+
+    input[type="checkbox"]:checked~label img {
+        padding: 0.1em;
+    }
+
+    input[type="checkbox"]:checked~nav {
+        left: 0em;
+    }
+
+    input[type="checkbox"]:checked~.busca {
+        display: block;
+
+    }
+
+    .menu-urls ul {
+        position: relative;
+        margin: 0px;
+        padding: 0em;
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .busca {
+        display: none;
+        position: absolute;
+        text-align: center;
+        width: 38%;
+        height: 3.1em;
+        left: 60%;
+        top: 64%;
+    }
+
+    .busca input {
+        border-radius: 0px;
+        background-color: transparent;
+        border: 1px solid #c9cacc;
+        color: #ffffff;
+        position: relative;
+        top: 1em;
+        width: 90%;
+        font-family: monospace;
+        font-size: 1.4em;
+        cursor: pointer;
+        outline: none;
+        text-align: center;
+        cursor: text;
+    }
+
+    .busca input:focus {
+        outline: none;
+        width: 90%;
+        height: auto;
+        text-align: left;
+        cursor: text;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    .busca:hover {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        margin: 0 auto;
+    }
+
+    .sociais {
+        display: none;
+        position: relative;
+        text-align: right;
+    }
+
+    .sociais ul li img {
+        width: auto;
+        height: 25px;
+        padding: 0px 4px;
+    }
+
+    .sociais ul {
+        position: relative;
+        right: 1.7em;
+        margin: 0 auto;
+        top: 0.5em;
+    }
+}
+
+/*SLIDER*/
+@media (max-width: 768px) {
+    .slide-principal {
+        display: grid;
+    }
+}
+
+/*SOBRE*/
+@media (max-width: 938px) {
+    .sobre {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        background-color: #ffffff;
+        margin-bottom: 4%;
+    }
+
+    .img-sobre {
+        display: none;
+    }
+
+    .txt-sobre {
+
+        padding-bottom: 45%;
+
+        background-image: url(../img/imagem-sobre-mobile.png);
+
+        background-repeat: no-repeat;
+
+        background-size: 100%;
+
+        background-position-y: bottom;
+
+        margin: 0;
+
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .conteudo {
+
+        grid-template-columns: auto;
+    }
+
+    .metodos {
+
+        grid-template-rows: auto auto auto;
+
+        margin: 6% 0%;
+    }
+
+    .metodos img {
+
+        width: 35%;
+
+        margin: 0px 32%;
+    }
+
+    .metodos p {
+
+        width: 90%;
+
+        margin: 0 5%;
+
+        text-align: center;
+    }
+
+    .metodos button {
+
+        width: 50%;
+
+        margin: 2% 25%;
+    }
+
+    .menu-urls {
+        padding-top: 2em;
+    }
+
+    .menu-urls ul {
+
+        display: contents;
+
+        padding: 0% 0;
+
+        width: 286%;
+    }
+
+    .menu-urls ul li {
+
+        margin: 0;
+
+        width: 100%;
+
+        display: block;
+
+        background-color: #1d375c6b;
+
+        margin: 1% 0%;
+    }
+
+    .menu-urls ul li a {}
+
+    .busca {
+
+        width: 100%;
+
+        left: 0;
+    }
+
+    .container2 {
+        grid-template-columns: auto;
+    }
+}

@@ -14,8 +14,3 @@
 .slide-principal div img {
 }
 
-@media (max-width: 768px) {
-    .slide-principal{
-        display: grid;
-    }
-}

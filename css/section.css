@@ -7,13 +7,13 @@
 
 .sobre {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% auto;
     width: 80%;
     margin: 0 10%;
 }
 
 .img-sobre {
-    padding: 4em 0;
+    padding: 10%;
 }
 
 .img-sobre img {
@@ -22,7 +22,7 @@
 
 .txt-sobre {
     text-align: center;
-    width: 89%;
+    width: 80%;
     margin-left: 10%;
 }
 
@@ -45,10 +45,19 @@
 .txt-sobre p {
     font-family: monospace;
     font-size: 1.2em;
+    text-align: right;
 }
 
 .ebooks {
     width: 100%;
     height: 100%;
     background-color: rgba(150, 150, 248, 0.281);
+    
+}
+
+.tutoriais {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 150, 248, 0.281);
+    
 }

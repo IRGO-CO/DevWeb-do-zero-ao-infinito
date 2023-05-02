@@ -18,7 +18,7 @@
 }
 
 .metodos p {
-    text-align: justify;
+    text-align: center;
     font-size: 112%;
     line-height: 115%;
     width: 80%;
@@ -31,6 +31,7 @@
     height: auto;
     margin: 24%;
     margin-bottom: 10%;
+    margin-top: 10%;
 }
 
 .metodos button {
@@ -39,7 +40,7 @@
     border: none;
     background-repeat: no-repeat;
     color: #ffffff;
-    font-size: 2em;
+    font-size: 125%;
     font-family: monospace;
     cursor: pointer;
     text-shadow: 5px 4px 4px black;
@@ -53,7 +54,7 @@
 }
 
 
-.header-ebooks {
+.header-content {
     height: 6em;
     position: relative;
     text-align: center;
@@ -63,7 +64,7 @@
     background-size: 236px;
 }
 
-.header-ebooks h1 {
+.header-content h1 {
     font-size: 300%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ffffff;
@@ -97,25 +98,26 @@
     display: block;
 }
 
-.usar-ebooks {
+.como-usar {
     width: 80%;
     margin: 0 10%;
+    border-bottom: 1px solid #0c79c7;
 }
 
-.usar-ebooks p {
+.como-usar p {
     text-align: center;
-    font-size: 25px;
+    font-size: 157%;
     font-family: monospace;
 }
 
-.usar-ebooks h2 {
+.como-usar h2 {
     font-family: cursive;
-    font-size: 30px;
+    font-size: 140%;
     margin-left: 5%;
 }
 
 
-.container-ebooks {
+.container {
     overflow: hidden;
     position: relative;
     display: grid;
@@ -123,7 +125,7 @@
     margin-top: 0%;
 }
 
-.container-ebooks2 {
+.container2 {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     position: relative;
@@ -131,13 +133,13 @@
     padding-top: 5%;
 }
 
-.container-ebooks2 div img {
+.container2 div img {
     width: 80%;
     margin: 13% 10%;
     border-radius: 10px;
 }
 
-.container-ebooks2 div img:hover {
+.container2 div img:hover {
     cursor: pointer;
     margin: 12% 8%;
     width: 82%;
